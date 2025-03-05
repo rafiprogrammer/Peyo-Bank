@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gradient-to-r from-violet-500 to-purple-500 scroll-smooth">
+    <section class="max-w-md min-h-screen mx-auto bg-white p-8">
+        <header>
+            <nav class="flex justify-center items-center">
+                <div class="relative flex justify-center items-center mt-28 w-9/12">
+                    <img class="mt-10 absolute" src="assets/bg.png" alt="">
+                    <img class="mb-16" src="assets/Group.png" alt="">
+                </div>
+            </nav>
+            <!-- Form Section  -->
+               <div>
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                  <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div class="card-body">
+                      <fieldset class="fieldset">
+                        <label class="fieldset-label text-base font-bold">Mobile Number</label>
+                        <input value="01927062705" id="account-number"  type="number" required class="input bg-gray-100  focus:outline-1 border-none pl-5 rounded-full py-6" placeholder="Enter your Number" />
+                        <label class="fieldset-label text-base font-bold mt-4">4 Digit Pin</label>
+                        <input id="pin" value="1325" type="text" required class="input bg-gray-100 border-none pl-5 rounded-full py-6 focus:outline-1" placeholder="Enter 4 Digit Pin" />
+                        <div class="mt-2"><a class="link link-hover text-sm">Forgot password?</a></div>
+                        <button id="login-btn" class="btn text-white mt-4 rounded-full bg-indigo-500 outline-none py-6 hover:bg-slate-600">Login</button>
+                      </fieldset>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <!-- Form End -->
+            </div>
+        </header>
+    </section>
+    <script src="js/login.js"></script>
+</body>
+</html>
