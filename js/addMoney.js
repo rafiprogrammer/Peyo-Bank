@@ -1,5 +1,5 @@
 // For Logout 
-document.getElementById('log-out').addEventListener('focus', function(event){
+document.getElementById('log-out').addEventListener('focus', function(){
     window.location.href ="./index.html"
 })
 // Add Money 
@@ -7,13 +7,12 @@ document.getElementById('add-money-btn').addEventListener('click', function(even
     event.preventDefault()
     
     const pins = document.getElementById("pin").value
-    const pin = parseInt(pins)
-    const amounts = document.getElementById('amount').value
-    const amount= parseInt(amounts)
+    const pin = parseFloat(pins)
+    const amounts = document.getElementById('add-amount').value
+    const amount= parseFloat(amounts)
     const balances = document.getElementById('main-balance').innerText
     const balance =parseFloat(balances)
-    const accountNumber = document.getElementById('account-number').value
-    const number = parseInt(accountNumber)
+    const number = document.getElementById('account-number').value
     const selectedBank = document.getElementById('all-bank').value
     if(amount && pin){
         if(number.length = 11){

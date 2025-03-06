@@ -2,14 +2,13 @@ document
   .getElementById("send-btn")
   .addEventListener("click", function (event) {
     event.preventDefault();
-    const amounts = document.getElementById('amount').value
-    const amount= parseInt(amounts)
+    const amounts = document.getElementById('send-amount').value
+    const amount= parseFloat(amounts)
     const pins = document.getElementById("pin").value
-    const pin = parseInt(pins)
+    const pin = parseFloat(pins)
     const balances = document.getElementById("main-balance").innerText;
-    const balance = parseInt(balances);
-    const accountNumber = document.getElementById("number").value;
-    const number = parseInt(accountNumber);
+    const balance = parseFloat(balances);
+    const number = document.getElementById("number").value;
     if (amount > balance) {
       alert("Balance Low");
       return;
